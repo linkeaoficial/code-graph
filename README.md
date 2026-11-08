@@ -46,25 +46,25 @@ Cualquier desarrollador puede instalar esta skill en su proyecto con un solo com
 
 ```bash
 # Para Google Antigravity / Cline / Roo Code / Kilo Code:
-npx degit TU_USUARIO/code-graph .agents/skills/code-graph
+npx degit linkeaoficial/code-graph .agents/skills/code-graph
 
 # Para Claude Code / OpenCode:
-npx degit TU_USUARIO/code-graph .claude/skills/code-graph
+npx degit linkeaoficial/code-graph .claude/skills/code-graph
 ```
 
 ### Opción 2: Con `git clone`
 
 ```bash
 # Para Google Antigravity:
-git clone https://github.com/TU_USUARIO/code-graph.git .agents/skills/code-graph
+git clone https://github.com/linkeaoficial/code-graph.git .agents/skills/code-graph
 
 # Para Claude Code:
-git clone https://github.com/TU_USUARIO/code-graph.git .claude/skills/code-graph
+git clone https://github.com/linkeaoficial/code-graph.git .claude/skills/code-graph
 ```
 
 ### Opción 3: Pídeselo directamente a tu Agente IA
 Solo escribe en el chat de tu IA:
-> *"Instala la skill de code-graph desde https://github.com/TU_USUARIO/code-graph en .agents/skills/code-graph"*
+> *"Instala la skill de code-graph desde https://github.com/linkeaoficial/code-graph en .agents/skills/code-graph"*
 
 ---
 
