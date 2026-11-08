@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+
+# Cache local incremental
+.code-graph/
+
+# Generated HTML visuals (on-demand)
+code-graph.html
+
+# Logs & temp files
+*.log
+.DS_Store
+Thumbs.db

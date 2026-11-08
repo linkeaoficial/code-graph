@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090b"/>
+      <stop offset="50%" stop-color="#121217"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+
+    <!-- Node Glow Filters -->
+    <filter id="glowEmerald" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Line Gradients -->
+    <linearGradient id="edgeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="edgeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="240" rx="16" fill="url(#bgGrad)"/>
+  <rect width="800" height="240" rx="16" fill="url(#grid)"/>
+  <rect width="800" height="240" rx="16" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.5"/>
+
+  <!-- Graph Emblem (Left side) -->
+  <g transform="translate(40, 20)">
+    <!-- Connection Lines -->
+    <line x1="80" y1="100" x2="140" y2="50" stroke="url(#edgeGrad1)" stroke-width="2" stroke-dasharray="3 3"/>
+    <line x1="80" y1="100" x2="140" y2="150" stroke="url(#edgeGrad1)" stroke-width="2"/>
+    <line x1="140" y1="50" x2="200" y2="100" stroke="url(#edgeGrad2)" stroke-width="2"/>
+    <line x1="140" y1="150" x2="200" y2="100" stroke="url(#edgeGrad2)" stroke-width="2"/>
+    <line x1="140" y1="50" x2="140" y2="150" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+    <line x1="80" y1="100" x2="200" y2="100" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+
+    <!-- Nodes -->
+    <!-- Center Left (Root) -->
+    <circle cx="80" cy="100" r="14" fill="#18181b" stroke="#10b981" stroke-width="2.5" filter="url(#glowEmerald)"/>
+    <circle cx="80" cy="100" r="5" fill="#10b981"/>
+
+    <!-- Top Hub -->
+    <circle cx="140" cy="50" r="12" fill="#18181b" stroke="#38bdf8" stroke-width="2" filter="url(#glowCyan)"/>
+    <circle cx="140" cy="50" r="4" fill="#38bdf8"/>
+
+    <!-- Bottom Barrel -->
+    <circle cx="140" cy="150" r="12" fill="#18181b" stroke="#06b6d4" stroke-width="2"/>
+    <circle cx="140" cy="150" r="4" fill="#06b6d4"/>
+
+    <!-- Target Node -->
+    <circle cx="200" cy="100" r="16" fill="#18181b" stroke="#818cf8" stroke-width="2.5"/>
+    <circle cx="200" cy="100" r="6" fill="#818cf8"/>
+  </g>
+
+  <!-- Typography & Brand (Right side) -->
+  <g transform="translate(300, 105)">
+    <!-- Main Title -->
+    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="44" font-weight="800" fill="#f4f4f5" letter-spacing="-0.03em">
+      CODE<tspan fill="#38bdf8">·</tspan>GRAPH
+    </text>
+
+    <!-- Version Badge -->
+    <rect x="300" y="-30" width="54" height="20" rx="10" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1"/>
+    <text x="327" y="-16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#34d399" text-anchor="middle">v3.0</text>
+
+    <!-- Subtitle / Value Proposition -->
+    <text y="32" font-family="'JetBrains Mono', monospace" font-size="13" fill="#a1a1aa" letter-spacing="-0.01em">
+      Zero-Dependency Context Optimizer &amp; AST Graph for AI Agents
+    </text>
+
+    <!-- Metrics Pill Strip -->
+    <g transform="translate(0, 52)">
+      <!-- Pill 1 -->
+      <rect x="0" y="0" width="105" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="52" y="15" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e4e4e7" text-anchor="middle">⚡ 90% Tokens</text>
+
+      <!-- Pill 2 -->
+      <rect x="115" y="0" width="115" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="172" y="15" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e4e4e7" text-anchor="middle">🎯 Blast Radius</text>
+
+      <!-- Pill 3 -->
+      <rect x="240" y="0" width="125" height="22" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="302" y="15" font-family="'JetBrains Mono', monospace" font-size="10" fill="#e4e4e7" text-anchor="middle">🔍 Symbol Tracer</text>
+    </g>
+  </g>
+</svg>
