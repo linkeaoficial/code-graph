@@ -36,6 +36,8 @@ Sabe con exactitud matemática qué archivo exporta cada función, quién lo con
 | **Exploración inicial de arquitectura** | Explorar el árbol con búsquedas masivas (~12,000 tokens) | `map` jerárquico ultra-denso (~180 tokens) | **-98.5%** |
 | **Sesión promedio de 20 interacciones** | ~280,000 tokens (ventana saturada) | ~35,000 tokens (ventana limpia) | **~87% Ahorro Global** |
 
+> 📊 **Análisis detallado de arquitectura:** Consulta [BEFORE_AFTER.md](BEFORE_AFTER.md) para ver la comparativa paso a paso del flujo de trabajo de los agentes con y sin Code-Graph.
+
 ---
 
 ## 🚀 Instalación en 1 Paso desde GitHub
